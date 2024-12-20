@@ -15,17 +15,15 @@ Includes support for multiple templates, backup functionality, and Microsoft Gra
 
 **PARAMETER -Logo**  
 Specifies which logo to use in the signature. Available options:  
-  - FoC (default)
-  - H2K
-  - GSINA
-  - GSIPA
-  - GSIT
-  - GSIAM
-  - GSISG
-  - GSIVET
+  - Logo-Default (default)
+  - Logo-Default2
+  - Logo-Default3
+  - Logo-SecondaryDomain
+  - Logo-Alternative
+
 
 **EXAMPLE**  
-`-Logo GSIPA`
+`-Logo Logo-Default2`
 
 **PARAMETER -User**  
 Specify a User. Files will be saved to C:\Temp\Signatures
@@ -93,9 +91,8 @@ Use this when troubleshooting signature issues.
     
 **Version 0.1.5**  
   - Fixed `-Logo` parameter to work correctly in Tactical RMM
-  - All non Environet email accounts have logoName added to the filenames to allow for multiple signatures
+  - All non SecondaryDomain email accounts have logoName added to the filenames to allow for multiple signatures
   - Cleaned up Output to be more readable
-  - Added  $lowercaseWords (line 233) to allow for specific words to be in lowercase
     
 **Version 0.1.4**   
   - You can now define a specific user with `.\Set-OutlookSignatures.ps1 -User JDoe` or `-User JDoe` in TRMM field
@@ -119,13 +116,13 @@ Use this when troubleshooting signature issues.
   - Finished Environet New Email template.
   - Optimized logic flow and Functions.
   - Added new helpers for converting variables to all Uppercase or Lowercase.
-  - Added more logging information for Environet.
+  - Added more logging information for SecondaryDomain.
   - Enhanced script output with more information and better readibility.
     
 **Version 0.1.2**  
-  - Set Microsoft Graph with registered Entra App as default method for pulling user information, falls back to AD if fails.
-  - Checks if user has an Environet account
-  - Began HTML template to generate Environet "New Email" signatures
+  - Set Microsoft Graph with registered Entra App as default method for pulling user information.
+  - Checks if user has an SecondaryDomain account
+  - Began HTML template to generate SecondaryDomain "New Email" signatures
     
 **Version 0.1.1**  
   - Enhanced registry settings to manage Outlook's default signature configuration.
@@ -133,4 +130,4 @@ Use this when troubleshooting signature issues.
   - Ensured `DisableRoamingSignatures` and `DisableRoamingSignaturesTemporaryToggle` are set to allow for roaming signatures.
     
 **Version 0.1.0**  
-  - Initial script to generate signatures dynamically based on Active Directory details.
+  - Initial script to generate signatures dynamically
