@@ -12,8 +12,8 @@ Generates an HTML email signature for Microsoft Outlook using Base64 encoded ima
 
 **DESCRIPTION**  
 This script creates Outlook signatures using Base64 encoded images instead of downloading external files.
-All logos are embedded directly in the HTML, making the signatures more portable and reliable.
-Includes support for multiple templates, backup functionality, and Microsoft Graph API integration.  
+All logos are embedded directly in the HTML, making the signatures more portable and compatible with the "New Outlook" 
+Microsoft will undoubtedly enforce on us eventually.  Includes support for multiple templates, backup functionality, and Microsoft Graph API integration.   
 
 **REQUIREMENTS**  
   - PowerShell 5.1 or later  
@@ -34,7 +34,7 @@ Specifies which logo to use in the signature. Available options:
 `-Logo Logo-Default2`
 
 **PARAMETER -User**  
-Specify a User. Files will be saved to C:\Temp\Signatures
+Specify a User. Files will be saved to C:\Temp\Signatures.  Registry settings are ignored if this parameter is used.  Useful for testing purposes.
 
 **EXAMPLE**  
 `-User JDoe`
