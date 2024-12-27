@@ -8,7 +8,7 @@ This script is intended to be ran through an RMM such as Tactical RMM.
 
 **SYNOPSIS**   
 --------------------------------
-Generates an HTML email signature for Microsoft Outlook using Base64 encoded images.
+Generates an HTML email signature for Microsoft Outlook using Base64 encoded images, all within one single ps1 file with no templates.
 
 **DESCRIPTION**  
 This script creates Outlook signatures using Base64 encoded images instead of downloading external files.
