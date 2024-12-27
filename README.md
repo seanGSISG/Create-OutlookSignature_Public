@@ -2,6 +2,10 @@ NOTE:  This is a work in progress project I am doing for work, this Public versi
 The code will likely be many revisions behind the current private repo but wanted to share this in case anyone else wanted a 100% free solution.
 I'd like to thank @GruberMarkus, his Set-OutlookSignatures project is what inspired me to start this project and learn how to code in PS.
 
+Once the main project is done I hope to provide an easy to follow setup guide to just insert your own environment details to deploy.
+
+This script is intended to be ran through an RMM such as Tactical RMM.
+
 **SYNOPSIS**   
 --------------------------------
 Generates an HTML email signature for Microsoft Outlook using Base64 encoded images.
