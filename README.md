@@ -1,3 +1,7 @@
+NOTE:  This is a work in progress project I am doing for work, this Public version has stripped any confidential information related to the company.  
+The code will likely be many revisions behind the current private repo but wanted to share this in case anyone else wanted a 100% free solution.
+I'd like to thank @GruberMarkus, his Set-OutlookSignatures project is what inspired me to start this project and learn how to code in PS.
+
 **SYNOPSIS**   
 --------------------------------
 Generates an HTML email signature for Microsoft Outlook using Base64 encoded images.
